@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — ContextShift</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #0A0908;
+      --surface: #141210;
+      --text: #E8E0D0;
+      --text-dim: #9A917E;
+      --gold: #C8A96E;
+      --gold-dim: #9A7D4E;
+      --border: #2A2520;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    /* Header */
+    .header {
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-family: 'Space Mono', 'SF Mono', 'Consolas', monospace;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: var(--text);
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    h1 {
+      font-family: 'Space Mono', 'SF Mono', 'Consolas', monospace;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .effective-date {
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      color: var(--gold-dim);
+      letter-spacing: 0.5px;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-family: 'Space Mono', 'SF Mono', 'Consolas', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: var(--text);
+      opacity: 0.85;
+    }
+
+    strong {
+      color: var(--text);
+      opacity: 1;
+    }
+
+    ul {
+      list-style: none;
+      margin: 12px 0;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 4px 0 4px 20px;
+      position: relative;
+      color: var(--text);
+      opacity: 0.85;
+    }
+
+    ul li::before {
+      content: '>';
+      position: absolute;
+      left: 0;
+      color: var(--gold-dim);
+      font-family: 'Space Mono', monospace;
+      font-size: 13px;
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    code {
+      font-family: 'Space Mono', 'SF Mono', 'Consolas', monospace;
+      font-size: 13px;
+      color: var(--gold);
+      background: var(--surface);
+      padding: 2px 6px;
+      border: 1px solid var(--border);
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold-dim);
+      transition: border-color 0.15s;
+    }
+
+    a:hover {
+      border-color: var(--gold);
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      color: var(--text-dim);
+      letter-spacing: 0.5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer a {
+      color: var(--gold-dim);
+      border-bottom-color: transparent;
+    }
+
+    .footer a:hover {
+      color: var(--gold);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 40px 16px 60px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      .footer {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <a href="#" class="logo">CONTEXT<span>SHIFT</span></a>
+      <h1>Privacy Policy</h1>
+      <p class="effective-date">Effective: May 9, 2026</p>
+    </div>
+
+    <!-- TL;DR -->
+    <div class="section">
+      <div class="highlight-box">
+        <p><strong>TL;DR</strong> — ContextShift collects zero data. Everything stays in your browser. We have no servers, no analytics, no tracking. Your conversations and API key never leave your machine.</p>
+      </div>
+    </div>
+
+    <!-- What is ContextShift -->
+    <div class="section">
+      <h2>What is ContextShift</h2>
+      <p>ContextShift is a browser extension that exports AI conversations and generates handoff prompts so you can seamlessly continue your work across different AI platforms. It runs entirely in your browser.</p>
+    </div>
+
+    <!-- Data Collection -->
+    <div class="section">
+      <h2>Data We Collect</h2>
+      <p><strong>None.</strong></p>
+      <p>ContextShift does not collect, transmit, store, or process any personal data on any server. There is no backend. There is no database. There are no servers.</p>
+    </div>
+
+    <!-- What's Stored Locally -->
+    <div class="section">
+      <h2>What's Stored Locally</h2>
+      <p>The following data is stored <strong>exclusively in your browser</strong> using Chrome's built-in storage APIs:</p>
+      <ul>
+        <li><strong>Your settings</strong> — export format preference, toggle states. Stored in <code>chrome.storage.local</code>.</li>
+        <li><strong>Anthropic API key</strong> — if you choose to enter one for handoff prompt generation. Stored in <code>chrome.storage.local</code>. Never transmitted anywhere except directly to Anthropic's API when you explicitly click "Generate Handoff Prompt".</li>
+        <li><strong>Exported conversations</strong> — saved to your browser's IndexedDB for the conversation library feature. Never leaves your device.</li>
+        <li><strong>Last handoff prompt</strong> — cached locally for the Quick Paste feature.</li>
+      </ul>
+      <p>You can delete all stored data at any time from the extension's Settings tab.</p>
+    </div>
+
+    <!-- Third-Party Services -->
+    <div class="section">
+      <h2>Third-Party Services</h2>
+      <p>ContextShift makes <strong>one optional external API call</strong>:</p>
+      <ul>
+        <li><strong>Anthropic API</strong> — When you click "Generate Handoff Prompt", your conversation text is sent to Anthropic's API (<code>api.anthropic.com</code>) to generate a context summary. This uses <strong>your own API key</strong> that you provide. This call only happens when you explicitly initiate it.</li>
+      </ul>
+      <p>Anthropic's handling of API data is governed by <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>. Per their API terms, data sent via the API is not used to train their models.</p>
+      <p>No other external services, servers, APIs, or third parties receive any data from this extension.</p>
+    </div>
+
+    <!-- Cookies & Tracking -->
+    <div class="section">
+      <h2>Cookies & Tracking</h2>
+      <p>ContextShift uses:</p>
+      <ul>
+        <li><strong>Zero cookies</strong></li>
+        <li><strong>Zero analytics</strong></li>
+        <li><strong>Zero telemetry</strong></li>
+        <li><strong>Zero tracking pixels</strong></li>
+        <li><strong>Zero fingerprinting</strong></li>
+      </ul>
+      <p>We don't know who you are, what you export, or when you use the extension. That's by design.</p>
+    </div>
+
+    <!-- Permissions -->
+    <div class="section">
+      <h2>Extension Permissions</h2>
+      <p>ContextShift requests the following browser permissions:</p>
+      <ul>
+        <li><strong>storage</strong> — Save your settings and conversation library locally in your browser</li>
+        <li><strong>tabs</strong> — Detect which AI platform you're currently on</li>
+        <li><strong>scripting</strong> — Run content scripts to read conversation content from supported AI platforms</li>
+        <li><strong>downloads</strong> — Save exported conversation files to your computer</li>
+        <li><strong>activeTab</strong> — Access the current tab to scrape the active conversation</li>
+        <li><strong>Host permissions</strong> — Limited to supported AI platform domains only (claude.ai, chat.openai.com, chatgpt.com, gemini.google.com, grok.com, perplexity.ai, phind.com, you.com)</li>
+      </ul>
+    </div>
+
+    <!-- Data Security -->
+    <div class="section">
+      <h2>Data Security</h2>
+      <p>Since all data remains in your browser's local storage, security is handled by your browser's built-in sandboxing and encryption mechanisms. We cannot access, read, or recover your data — because we never have it.</p>
+      <p>Your API key is stored using <code>chrome.storage.local</code>, which is sandboxed to the extension and inaccessible to websites or other extensions.</p>
+    </div>
+
+    <!-- Children's Privacy -->
+    <div class="section">
+      <h2>Children's Privacy</h2>
+      <p>ContextShift is not directed at children under the age of 13 and does not knowingly collect any information from children. Since the extension collects no data at all, this is inherently enforced.</p>
+    </div>
+
+    <!-- Changes -->
+    <div class="section">
+      <h2>Changes to This Policy</h2>
+      <p>If this privacy policy is updated, the changes will be reflected on this page with a new effective date. Since ContextShift has no way to contact users (we don't have your email or any identifier), checking this page is the only way to stay informed.</p>
+    </div>
+
+    <!-- Open Source -->
+    <div class="section">
+      <h2>Open Source</h2>
+      <p>ContextShift is open source. You can audit every line of code to verify these claims. The extension contains no obfuscated code, no hidden network calls, and no bundled tracking libraries.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="section">
+      <h2>Contact</h2>
+      <p>If you have questions about this privacy policy or the extension's data practices, reach out:</p>
+      <ul>
+        <li><strong>GitHub</strong> — <a href="https://github.com/YOUR_USERNAME/contextshift/issues" target="_blank" rel="noopener">Open an issue</a></li>
+        <li><strong>Email</strong> — <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <span>&copy; 2026 ContextShift</span>
+      <a href="#">Back to top</a>
+    </div>
+
+  </div>
+</body>
+</html>
