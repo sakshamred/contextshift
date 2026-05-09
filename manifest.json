@@ -1,0 +1,93 @@
+{
+  "manifest_version": 3,
+  "name": "ContextShift",
+  "version": "1.0.0",
+  "description": "Universal AI conversation exporter & context bridge. Carry your chat history from any AI to any other AI instantly.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "downloads",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://claude.ai/*",
+    "https://chat.openai.com/*",
+    "https://chatgpt.com/*",
+    "https://gemini.google.com/*",
+    "https://grok.com/*",
+    "https://www.perplexity.ai/*",
+    "https://www.phind.com/*",
+    "https://you.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content-scripts/claude.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://chat.openai.com/*", "https://chatgpt.com/*"],
+      "js": ["content-scripts/chatgpt.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["content-scripts/gemini.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://grok.com/*"],
+      "js": ["content-scripts/grok.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://www.perplexity.ai/*"],
+      "js": ["content-scripts/perplexity.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://www.phind.com/*"],
+      "js": ["content-scripts/phind.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://you.com/*"],
+      "js": ["content-scripts/you.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://claude.ai/*",
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*",
+        "https://grok.com/*",
+        "https://www.perplexity.ai/*",
+        "https://www.phind.com/*",
+        "https://you.com/*"
+      ],
+      "js": ["content-scripts/quickpaste.js"],
+      "css": ["styles/quickpaste.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
